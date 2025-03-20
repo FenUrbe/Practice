@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">We’d love to hear your thoughts!</h1>
+    <p id="description">Thank you for using PokemonApp! Your feedback helps us improve and create a better experience for you. This short survey should only take a couple of minutes to complete.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Full Name: </label>
+        <input id="name" type="text" placeholder="Full Name" required/><br>
+        <label for="email" id="email-label">Email Address: </label>
+        <input id="email" type="email" placeholder="email@domain.com" required/><br>
+        <label for="number" id="number-label">Phone Number: </label>
+        <input id="number" type="number" min="3" max="10000000" placeholder="09123456789" /><br>
+      </fieldset>
+      <fieldset>
+        <legend>Generation</legend>
+        <label for="dropdown ">Generation</label>
+        <select id="dropdown">
+          <option value="1stGen">First Gen</option>
+          <option value="2ndGen">Second Gen</option>
+          <option value="3rdGen">Third Gen</option>
+          <option value="4thGen">Fourth Gen</option>
+          <option value="5thGen">Fifth Gen</option>
+          <option value="6thGen">Sixth Gen</option>
+          <option value="7thGen">Seventh Gen</option>
+          <option value="8thGen">Eighth Gen</option>
+        </select><br>
+      </fieldset>
+      <fieldset>
+        <legend>Starter Pokemon Type</legend>
+        <input id="firestarter" type="radio" name="radio" value="firestarter" />
+        <label for="firestarter">Fire</label><br>
+        <input id="waterstarter" type="radio" name="radio" value="waterstarter" />
+        <label for="waterstarter">Water</label><br>
+        <input id="grassstarter" type="radio" name="radio" value="grassstarter" />
+        <label for="grassstarter">Grass</label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Other Pokemon</legend>
+        <input id="normal" type="checkbox" name="normal" value="normal" />
+        <label for="normal">Normal</label><br>
+        <input id="fire" type="checkbox" name="fire" value="fire" />
+        <label for="fire">Fire</label><br>
+        <input id="water" type="checkbox" name="water" value="water" />
+        <label for="water">Water</label><br>
+        <input id="electric" type="checkbox" name="electric" value="electric" />
+        <label for="electric">Electric</label><br>
+        <input id="grass" type="checkbox" name="grass" value="grass" />
+        <label for="grass">Grass</label><br>
+        <input id="ice" type="checkbox" name="ice" value="ice" />
+        <label for="ice">Ice</label><br>
+        <input id="fighting" type="checkbox" name="fighting" value="fighting" />
+        <label for="fighting">Fighting</label><br>
+        <input id="poison" type="checkbox" name="poison" value="poison" />
+        <label for="poison">Poison</label><br>
+        <input id="ground" type="checkbox" name="ground" value="ground" />
+        <label for="ground">Ground</label><br>
+        <input id="flying" type="checkbox" name="flying" value="flying" />
+        <label for="flying">Flying</label><br>
+        <input id="psychic" type="checkbox" name="psychic" value="psychic" />
+        <label for="psychic">Psychic</label><br>
+        <input id="buug" type="checkbox" name="buug" value="buug" />
+        <label for="buug">Buug</label><br>
+        <input id="rock" type="checkbox" name="rock" value="rock" />
+        <label for="rock">Rock</label><br>
+        <input id="ghost" type="checkbox" name="ghost" value="ghost" />
+        <label for="ghost">Ghost</label><br>
+        <input id="dragon" type="checkbox" name="dragon" value="dragon" />
+        <label for="dragon">Dragon</label><br>
+        <input id="dark" type="checkbox" name="dark" value="dark" />
+        <label for="dark">Dark</label><br>
+        <input id="steel" type="checkbox" name="steel" value="steel" />
+        <label for="steel">Steel</label><br>
+        <input id="fairy" type="checkbox" name="fairy" value="fairy" />
+        <label for="fairy">Fairy</label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Suggestions</legend>
+        <label>Suggestion for Update: </label><br>
+        <textarea cols="30" rows="10" name="suggestion" id="suggestion"></textarea><br>
+      </fieldset>
+      
+      
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
